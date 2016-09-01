@@ -10,6 +10,7 @@
 
 typedef NS_ENUM(NSUInteger, MHItemType){//定义枚举
     
+    MHItemTypelaunch = 10,//启动直播
     MHItemTypeLive = 100,//显示直播
     MHItemTypeMe,//我
 };

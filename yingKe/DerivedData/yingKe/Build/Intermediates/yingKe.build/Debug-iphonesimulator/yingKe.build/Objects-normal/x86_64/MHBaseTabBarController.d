@@ -4,4 +4,6 @@ dependencies: \
   /Users/mac/Desktop/yingKe/yingKe/yingKe/class/Other/Header.h \
   /Users/mac/Desktop/yingKe/yingKe/yingKe/class/Base/MHBaseTabBarController.h \
   /Users/mac/Desktop/yingKe/yingKe/yingKe/class/Base/MHTabBar.h \
-  /Users/mac/Desktop/yingKe/yingKe/yingKe/class/Base/MHBaseNavigationController.h
+  /Users/mac/Desktop/yingKe/yingKe/yingKe/class/Base/MHBaseNavigationController.h \
+  /Users/mac/Desktop/yingKe/yingKe/yingKe/class/Live/ViewController/MHLaunchViewController.h \
+  /Users/mac/Desktop/yingKe/yingKe/yingKe/class/Base/MHBaseViewController.h
