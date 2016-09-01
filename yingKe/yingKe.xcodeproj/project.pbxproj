@@ -19,10 +19,16 @@
 		044E589F1D782BC70027F8DB /* MHMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 044E589E1D782BC70027F8DB /* MHMainViewController.m */; };
 		044E58A21D782BD20027F8DB /* MHMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 044E58A11D782BD20027F8DB /* MHMeViewController.m */; };
 		044E58A51D782C810027F8DB /* MHBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 044E58A41D782C810027F8DB /* MHBaseNavigationController.m */; };
-		044E58A71D782CAB0027F8DB /* MHMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 044E58A61D782CAB0027F8DB /* MHMainViewController.xib */; };
 		044E58A91D782D090027F8DB /* MHMeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 044E58A81D782D090027F8DB /* MHMeViewController.xib */; };
 		044E58AD1D7867150027F8DB /* MHLaunchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 044E58AB1D7867150027F8DB /* MHLaunchViewController.m */; };
 		044E58AE1D7867150027F8DB /* MHLaunchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 044E58AC1D7867150027F8DB /* MHLaunchViewController.xib */; };
+		044E58B21D7870320027F8DB /* MHFocuseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 044E58B01D7870320027F8DB /* MHFocuseViewController.m */; };
+		044E58B31D7870320027F8DB /* MHFocuseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 044E58B11D7870320027F8DB /* MHFocuseViewController.xib */; };
+		044E58B71D7870400027F8DB /* MHHotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 044E58B51D7870400027F8DB /* MHHotViewController.m */; };
+		044E58B81D7870400027F8DB /* MHHotViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 044E58B61D7870400027F8DB /* MHHotViewController.xib */; };
+		044E58BC1D7870500027F8DB /* MHNearbyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 044E58BA1D7870500027F8DB /* MHNearbyViewController.m */; };
+		044E58BD1D7870500027F8DB /* MHNearbyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 044E58BB1D7870500027F8DB /* MHNearbyViewController.xib */; };
+		044E58BF1D787C000027F8DB /* MHMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 044E58BE1D787C000027F8DB /* MHMainViewController.xib */; };
 		D07B0C197E2687FDD3FBF0C0 /* libPods-yingKe.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C3CB61E9D58981145C60AFB /* libPods-yingKe.a */; };
 /* End PBXBuildFile section */
 
@@ -51,11 +57,20 @@
 		044E58A11D782BD20027F8DB /* MHMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHMeViewController.m; sourceTree = "<group>"; };
 		044E58A31D782C810027F8DB /* MHBaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHBaseNavigationController.h; sourceTree = "<group>"; };
 		044E58A41D782C810027F8DB /* MHBaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHBaseNavigationController.m; sourceTree = "<group>"; };
-		044E58A61D782CAB0027F8DB /* MHMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MHMainViewController.xib; sourceTree = "<group>"; };
 		044E58A81D782D090027F8DB /* MHMeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MHMeViewController.xib; sourceTree = "<group>"; };
 		044E58AA1D7867150027F8DB /* MHLaunchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHLaunchViewController.h; sourceTree = "<group>"; };
 		044E58AB1D7867150027F8DB /* MHLaunchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHLaunchViewController.m; sourceTree = "<group>"; };
 		044E58AC1D7867150027F8DB /* MHLaunchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MHLaunchViewController.xib; sourceTree = "<group>"; };
+		044E58AF1D7870320027F8DB /* MHFocuseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHFocuseViewController.h; sourceTree = "<group>"; };
+		044E58B01D7870320027F8DB /* MHFocuseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHFocuseViewController.m; sourceTree = "<group>"; };
+		044E58B11D7870320027F8DB /* MHFocuseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MHFocuseViewController.xib; sourceTree = "<group>"; };
+		044E58B41D7870400027F8DB /* MHHotViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHHotViewController.h; sourceTree = "<group>"; };
+		044E58B51D7870400027F8DB /* MHHotViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHHotViewController.m; sourceTree = "<group>"; };
+		044E58B61D7870400027F8DB /* MHHotViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MHHotViewController.xib; sourceTree = "<group>"; };
+		044E58B91D7870500027F8DB /* MHNearbyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHNearbyViewController.h; sourceTree = "<group>"; };
+		044E58BA1D7870500027F8DB /* MHNearbyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHNearbyViewController.m; sourceTree = "<group>"; };
+		044E58BB1D7870500027F8DB /* MHNearbyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MHNearbyViewController.xib; sourceTree = "<group>"; };
+		044E58BE1D787C000027F8DB /* MHMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MHMainViewController.xib; sourceTree = "<group>"; };
 		5C3CB61E9D58981145C60AFB /* libPods-yingKe.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-yingKe.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FF2F6EEF27A1A5C36E4551A /* Pods-yingKe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yingKe.debug.xcconfig"; path = "Pods/Target Support Files/Pods-yingKe/Pods-yingKe.debug.xcconfig"; sourceTree = "<group>"; };
 		8C5A8152F39483CCBD522C32 /* Pods-yingKe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yingKe.release.xcconfig"; path = "Pods/Target Support Files/Pods-yingKe/Pods-yingKe.release.xcconfig"; sourceTree = "<group>"; };
@@ -367,10 +382,19 @@
 			children = (
 				044E589D1D782BC70027F8DB /* MHMainViewController.h */,
 				044E589E1D782BC70027F8DB /* MHMainViewController.m */,
-				044E58A61D782CAB0027F8DB /* MHMainViewController.xib */,
+				044E58BE1D787C000027F8DB /* MHMainViewController.xib */,
 				044E58A01D782BD20027F8DB /* MHMeViewController.h */,
 				044E58A11D782BD20027F8DB /* MHMeViewController.m */,
 				044E58A81D782D090027F8DB /* MHMeViewController.xib */,
+				044E58AF1D7870320027F8DB /* MHFocuseViewController.h */,
+				044E58B01D7870320027F8DB /* MHFocuseViewController.m */,
+				044E58B11D7870320027F8DB /* MHFocuseViewController.xib */,
+				044E58B41D7870400027F8DB /* MHHotViewController.h */,
+				044E58B51D7870400027F8DB /* MHHotViewController.m */,
+				044E58B61D7870400027F8DB /* MHHotViewController.xib */,
+				044E58B91D7870500027F8DB /* MHNearbyViewController.h */,
+				044E58BA1D7870500027F8DB /* MHNearbyViewController.m */,
+				044E58BB1D7870500027F8DB /* MHNearbyViewController.xib */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -464,9 +488,12 @@
 				044E58651D77E8980027F8DB /* LaunchScreen.storyboard in Resources */,
 				044E58621D77E8980027F8DB /* Assets.xcassets in Resources */,
 				044E58AE1D7867150027F8DB /* MHLaunchViewController.xib in Resources */,
-				044E58A71D782CAB0027F8DB /* MHMainViewController.xib in Resources */,
+				044E58BD1D7870500027F8DB /* MHNearbyViewController.xib in Resources */,
+				044E58B31D7870320027F8DB /* MHFocuseViewController.xib in Resources */,
 				044E58601D77E8980027F8DB /* Main.storyboard in Resources */,
+				044E58BF1D787C000027F8DB /* MHMainViewController.xib in Resources */,
 				044E58A91D782D090027F8DB /* MHMeViewController.xib in Resources */,
+				044E58B81D7870400027F8DB /* MHHotViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -525,12 +552,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				044E58B21D7870320027F8DB /* MHFocuseViewController.m in Sources */,
 				044E58971D77E9130027F8DB /* AppDelegate.m in Sources */,
 				044E58571D77E8980027F8DB /* main.m in Sources */,
+				044E58BC1D7870500027F8DB /* MHNearbyViewController.m in Sources */,
 				044E58951D77E9130027F8DB /* MHBaseTabBarController.m in Sources */,
 				044E58961D77E9130027F8DB /* MHTabBar.m in Sources */,
 				044E58AD1D7867150027F8DB /* MHLaunchViewController.m in Sources */,
 				044E58A51D782C810027F8DB /* MHBaseNavigationController.m in Sources */,
+				044E58B71D7870400027F8DB /* MHHotViewController.m in Sources */,
 				044E589C1D782BA80027F8DB /* MHBaseViewController.m in Sources */,
 				044E58A21D782BD20027F8DB /* MHMeViewController.m in Sources */,
 				044E58981D77E9130027F8DB /* ViewController.m in Sources */,

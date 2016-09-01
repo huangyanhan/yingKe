@@ -7,14 +7,26 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MHMainViewController">
             <connections>
-                <outlet property="view" destination="iN0-l3-epB" id="mCx-FN-syE"/>
+                <outlet property="scrollView" destination="BbM-c4-ibf" id="Dy6-4N-7Vs"/>
+                <outlet property="view" destination="iN0-l3-epB" id="35e-8L-WsZ"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BbM-c4-ibf">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                </scrollView>
+            </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="BbM-c4-ibf" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="7qB-fJ-VPi"/>
+                <constraint firstAttribute="bottom" secondItem="BbM-c4-ibf" secondAttribute="bottom" id="Wcz-sk-f32"/>
+                <constraint firstItem="BbM-c4-ibf" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="ei8-ib-FDh"/>
+                <constraint firstAttribute="trailing" secondItem="BbM-c4-ibf" secondAttribute="trailing" id="mkd-yd-H8a"/>
+            </constraints>
         </view>
     </objects>
 </document>
