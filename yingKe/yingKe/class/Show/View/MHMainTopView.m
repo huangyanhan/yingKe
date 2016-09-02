@@ -9,8 +9,8 @@
 #import "MHMainTopView.h"
 
 @interface MHMainTopView ()
-@property (nonatomic, strong) UIView *lineView;
-@property (nonatomic, strong) NSMutableArray *buttonMu;
+@property (nonatomic, strong) UIView *lineView;//下面的线
+@property (nonatomic, strong) NSMutableArray *buttonMu;//
 @end
 
 @implementation MHMainTopView
@@ -34,20 +34,25 @@
             
             UIButton *titleBtn = [UIButton buttonWithType:UIButtonTypeCustom];
             NSString *vcName = titles[i];
+        
             [titleBtn setTitle:vcName forState:UIControlStateNormal];
             [titleBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+            //设置字体
             titleBtn.titleLabel.font = [UIFont systemFontOfSize:18];
             
-            titleBtn.tag = i;
+            titleBtn.tag = i;//设置tag值
             
             titleBtn.frame = CGRectMake(i * btnWidth, 0,btnWidth , btnHeight);
             [titleBtn addTarget:self action:@selector(titleClick:) forControlEvents:UIControlEventTouchUpInside];
             [self addSubview:titleBtn];
             
+            //热门下面的线的设置
             if (i == 1) {
                 CGFloat h = 2;
                 CGFloat y = 40;
+                
                 [titleBtn.titleLabel sizeToFit];
+                
                 self.lineView = [[UIView alloc]init];
                 self.lineView.backgroundColor = [UIColor whiteColor];
                 self.lineView.height = h;
@@ -65,7 +70,7 @@
 - (void)titleClick:(UIButton *)button{
     
     self.topBlock(button.tag);
-    [self scrolling:button.tag];
+//    [self scrolling:button.tag];
     [UIView animateWithDuration:0.5 animations:^{
         
         self.lineView.centerX = button.centerX;
@@ -76,10 +81,10 @@
 #pragma mark - 外界调用
 - (void)scrolling:(NSInteger)tag{
     
-    [UIView animateWithDuration:0.5 animations:^{
-        
-//    self.lineView.centerX = button.centerX;
-    } completion:nil];
+//    [UIView animateWithDuration:0.5 animations:^{
+//        
+////    self.lineView.centerX = button.centerX;
+//    } completion:nil];
 
 }
 

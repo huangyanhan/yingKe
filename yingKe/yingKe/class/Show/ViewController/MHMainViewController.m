@@ -11,7 +11,7 @@
 
 @interface MHMainViewController ()<UIScrollViewDelegate>
 
-@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
+@property (weak, nonatomic) IBOutlet UIScrollView *controntScrollView;
 @property (nonatomic, strong) NSArray *dataList;
 @property (nonatomic, strong) MHMainTopView *topView;
 
@@ -21,31 +21,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     [self initUI];
 
 }
-- (MHMainTopView *)topView{
-
-    if (!_topView) {
-        
-        _topView = [[MHMainTopView alloc]initWithFrame:CGRectMake(0, 0, 200, 50) titleNames:self.dataList];
-        _topView.topBlock = ^(NSInteger tag){
-            CGPoint point = CGPointMake(tag *SCREEN_WIDTH,self.scrollView.contentOffset.y);
-            
-            [self.scrollView setContentOffset:point animated:YES];
-        
-        };
-    }
-    return _topView;
-}
-- (NSArray *)dataList{
-    if (!_dataList) {
-        
-        _dataList = @[@"关注",@"热门",@"附近"];
-    }
-    return _dataList;
-}
-
 - (void)initUI{
     //添加导航栏
     [self setupNav];
@@ -65,14 +44,15 @@
         [self addChildViewController:vc];
     }
     
-    self.scrollView.contentSize = CGSizeMake(SCREEN_WIDTH * self.dataList.count, 0);
-    //先进入第二个界面
-    self.scrollView.contentOffset = CGPointMake(SCREEN_WIDTH, 0);
-    
+    self.controntScrollView.contentSize = CGSizeMake(SCREEN_WIDTH * self.dataList.count, 0);
+    //先进入第二个页面
+    self.controntScrollView.contentOffset = CGPointMake(SCREEN_WIDTH, 0);
+    self.controntScrollView.pagingEnabled = YES;
 //    self.scrollView.delegate = self;
-    [self scrollViewDidEndDecelerating:self.scrollView];
     
-    self.scrollView.pagingEnabled = YES;
+    //进入主控制器加载第一个页面
+    [self scrollViewDidEndScrollingAnimation:self.controntScrollView];
+    
     
 }
 - (void)setupNav{
@@ -83,15 +63,13 @@
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"title_button_more"] style:UIBarButtonItemStyleDone target:nil action:nil];
 
 }
+
+#pragma mark - 代理
+//动画结束时调用
 - (void)scrollViewDidEndScrollingAnimation:(UIScrollView *)scrollView{
     
-
-}
-
-- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView{
-
     CGFloat width = SCREEN_WIDTH;
-//    CGFloat width = scrollView.frame.size.width;
+    //    CGFloat width = scrollView.frame.size.width;
     CGFloat height = SCREEN_HEIGHT;
     
     CGFloat offSet = scrollView.contentOffset.x;
@@ -104,13 +82,46 @@
     if ([vc isViewLoaded]) return;
     
     //设置自控制的大小
-//    vc.view.frame = CGRectMake(offSet, 0, width, height);
+    //    vc.view.frame = CGRectMake(offSet, 0, width, height);
     vc.view.frame = CGRectMake(offSet, 0,scrollView.frame.size.width, height);//进入第二个页面设置
-
+    
     //将自控制器添加到scrollView
     [scrollView addSubview:vc.view];
     
+
+}
+//拖动后减速
+
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView{
+    [self scrollViewDidEndScrollingAnimation:scrollView];
+
     
+}
+#pragma mark - 懒加载
+- (MHMainTopView *)topView{
+    
+    if (!_topView) {
+        
+        _topView = [[MHMainTopView alloc]initWithFrame:CGRectMake(0, 0, 200, 50) titleNames:self.dataList];
+        
+        @weakify(self)
+        _topView.topBlock = ^(NSInteger tag){
+            
+            @strongify(self)
+            CGPoint point = CGPointMake(tag *SCREEN_WIDTH,self.controntScrollView.contentOffset.y);
+            
+            [self.controntScrollView setContentOffset:point animated:YES];
+            
+        };
+    }
+    return _topView;
+}
+- (NSArray *)dataList{
+    if (!_dataList) {
+        
+        _dataList = @[@"关注",@"热门",@"附近"];
+    }
+    return _dataList;
 }
 
 

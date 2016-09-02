@@ -7,7 +7,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MHMainViewController">
             <connections>
-                <outlet property="scrollView" destination="BbM-c4-ibf" id="Dy6-4N-7Vs"/>
+                <outlet property="controntScrollView" destination="BbM-c4-ibf" id="3Aj-8Y-AI4"/>
                 <outlet property="view" destination="iN0-l3-epB" id="35e-8L-WsZ"/>
             </connections>
         </placeholder>
@@ -18,6 +18,9 @@
             <subviews>
                 <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BbM-c4-ibf">
                     <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="JQK-Bg-TdS"/>
+                    </connections>
                 </scrollView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -27,6 +30,7 @@
                 <constraint firstItem="BbM-c4-ibf" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="ei8-ib-FDh"/>
                 <constraint firstAttribute="trailing" secondItem="BbM-c4-ibf" secondAttribute="trailing" id="mkd-yd-H8a"/>
             </constraints>
+            <point key="canvasLocation" x="233" y="332"/>
         </view>
     </objects>
 </document>

@@ -8,6 +8,7 @@ target 'yingKe' do
    pod 'Masonry', '~> 1.0.1'
    pod 'SDWebImage', '~> 3.8.1'
    pod 'YYKit', '~> 1.0.7'
+   pod 'MJExtension', '~> 3.0.13'
 
   # Pods for yingKe
 
