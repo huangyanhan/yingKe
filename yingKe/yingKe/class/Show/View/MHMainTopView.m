@@ -41,7 +41,7 @@
             titleBtn.titleLabel.font = [UIFont systemFontOfSize:18];
             
             titleBtn.tag = i;//设置tag值
-            
+            [self.buttonMu addObject:titleBtn];
             titleBtn.frame = CGRectMake(i * btnWidth, 0,btnWidth , btnHeight);
             [titleBtn addTarget:self action:@selector(titleClick:) forControlEvents:UIControlEventTouchUpInside];
             [self addSubview:titleBtn];
@@ -70,21 +70,17 @@
 - (void)titleClick:(UIButton *)button{
     
     self.topBlock(button.tag);
-//    [self scrolling:button.tag];
-    [UIView animateWithDuration:0.5 animations:^{
-        
-        self.lineView.centerX = button.centerX;
-    } completion:nil];
-
+    [self scrolling:button.tag];
 }
 
 #pragma mark - 外界调用
 - (void)scrolling:(NSInteger)tag{
     
-//    [UIView animateWithDuration:0.5 animations:^{
-//        
-////    self.lineView.centerX = button.centerX;
-//    } completion:nil];
+    UIButton *button = self.buttonMu[tag];
+    [UIView animateWithDuration:0.5 animations:^{
+        
+    self.lineView.centerX = button.centerX;
+    } completion:nil];
 
 }
 

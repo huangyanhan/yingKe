@@ -76,6 +76,9 @@
     
     //获取索引
     NSInteger idx = offSet/width;
+    
+    [self.topView scrolling:idx];
+    
     //根据索引判断VC
     UIViewController *vc = self.childViewControllers[idx];
     //判断当前的VC是不是执行了viewDidLoad
