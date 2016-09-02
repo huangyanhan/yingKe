@@ -30,6 +30,15 @@
 		044E58BD1D7870500027F8DB /* MHNearbyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 044E58BB1D7870500027F8DB /* MHNearbyViewController.xib */; };
 		044E58BF1D787C000027F8DB /* MHMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 044E58BE1D787C000027F8DB /* MHMainViewController.xib */; };
 		044E58C21D790F4D0027F8DB /* MHMainTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 044E58C11D790F4D0027F8DB /* MHMainTopView.m */; };
+		0469F9E01D79A113008B0D29 /* UIImageView+SDWebImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 0469F9DF1D79A113008B0D29 /* UIImageView+SDWebImage.m */; };
+		0469F9E31D79A129008B0D29 /* HttpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 0469F9E21D79A129008B0D29 /* HttpTool.m */; };
+		0469F9E61D79A770008B0D29 /* MHBaseHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 0469F9E51D79A770008B0D29 /* MHBaseHandler.m */; };
+		0469F9E91D79B417008B0D29 /* MHLiveHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 0469F9E81D79B417008B0D29 /* MHLiveHandler.m */; };
+		0469F9EC1D79C0F4008B0D29 /* MHLive.m in Sources */ = {isa = PBXBuildFile; fileRef = 0469F9EB1D79C0F4008B0D29 /* MHLive.m */; };
+		0469F9EF1D79C10D008B0D29 /* MHCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = 0469F9EE1D79C10D008B0D29 /* MHCreator.m */; };
+		0469F9F21D79C4A4008B0D29 /* MJExtensionConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 0469F9F11D79C4A4008B0D29 /* MJExtensionConfig.m */; };
+		0469F9F61D79D075008B0D29 /* MHLiveTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0469F9F41D79D075008B0D29 /* MHLiveTableViewCell.m */; };
+		0469F9F71D79D075008B0D29 /* MHLiveTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0469F9F51D79D075008B0D29 /* MHLiveTableViewCell.xib */; };
 		D07B0C197E2687FDD3FBF0C0 /* libPods-yingKe.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C3CB61E9D58981145C60AFB /* libPods-yingKe.a */; };
 /* End PBXBuildFile section */
 
@@ -75,6 +84,23 @@
 		044E58C01D790F4D0027F8DB /* MHMainTopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHMainTopView.h; sourceTree = "<group>"; };
 		044E58C11D790F4D0027F8DB /* MHMainTopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHMainTopView.m; sourceTree = "<group>"; };
 		044E5AC71D7926870027F8DB /* MHAPIConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHAPIConfig.h; sourceTree = "<group>"; };
+		0469F9DE1D79A113008B0D29 /* UIImageView+SDWebImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+SDWebImage.h"; sourceTree = "<group>"; };
+		0469F9DF1D79A113008B0D29 /* UIImageView+SDWebImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+SDWebImage.m"; sourceTree = "<group>"; };
+		0469F9E11D79A129008B0D29 /* HttpTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpTool.h; sourceTree = "<group>"; };
+		0469F9E21D79A129008B0D29 /* HttpTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpTool.m; sourceTree = "<group>"; };
+		0469F9E41D79A770008B0D29 /* MHBaseHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHBaseHandler.h; sourceTree = "<group>"; };
+		0469F9E51D79A770008B0D29 /* MHBaseHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHBaseHandler.m; sourceTree = "<group>"; };
+		0469F9E71D79B417008B0D29 /* MHLiveHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHLiveHandler.h; sourceTree = "<group>"; };
+		0469F9E81D79B417008B0D29 /* MHLiveHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHLiveHandler.m; sourceTree = "<group>"; };
+		0469F9EA1D79C0F4008B0D29 /* MHLive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHLive.h; sourceTree = "<group>"; };
+		0469F9EB1D79C0F4008B0D29 /* MHLive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHLive.m; sourceTree = "<group>"; };
+		0469F9ED1D79C10D008B0D29 /* MHCreator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHCreator.h; sourceTree = "<group>"; };
+		0469F9EE1D79C10D008B0D29 /* MHCreator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHCreator.m; sourceTree = "<group>"; };
+		0469F9F01D79C4A4008B0D29 /* MJExtensionConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJExtensionConfig.h; sourceTree = "<group>"; };
+		0469F9F11D79C4A4008B0D29 /* MJExtensionConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJExtensionConfig.m; sourceTree = "<group>"; };
+		0469F9F31D79D075008B0D29 /* MHLiveTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHLiveTableViewCell.h; sourceTree = "<group>"; };
+		0469F9F41D79D075008B0D29 /* MHLiveTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHLiveTableViewCell.m; sourceTree = "<group>"; };
+		0469F9F51D79D075008B0D29 /* MHLiveTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MHLiveTableViewCell.xib; sourceTree = "<group>"; };
 		5C3CB61E9D58981145C60AFB /* libPods-yingKe.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-yingKe.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FF2F6EEF27A1A5C36E4551A /* Pods-yingKe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yingKe.debug.xcconfig"; path = "Pods/Target Support Files/Pods-yingKe/Pods-yingKe.debug.xcconfig"; sourceTree = "<group>"; };
 		8C5A8152F39483CCBD522C32 /* Pods-yingKe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yingKe.release.xcconfig"; path = "Pods/Target Support Files/Pods-yingKe/Pods-yingKe.release.xcconfig"; sourceTree = "<group>"; };
@@ -159,6 +185,8 @@
 				044E589B1D782BA80027F8DB /* MHBaseViewController.m */,
 				044E58A31D782C810027F8DB /* MHBaseNavigationController.h */,
 				044E58A41D782C810027F8DB /* MHBaseNavigationController.m */,
+				0469F9E41D79A770008B0D29 /* MHBaseHandler.h */,
+				0469F9E51D79A770008B0D29 /* MHBaseHandler.m */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -333,6 +361,10 @@
 			isa = PBXGroup;
 			children = (
 				044E5AC71D7926870027F8DB /* MHAPIConfig.h */,
+				0469F9E11D79A129008B0D29 /* HttpTool.h */,
+				0469F9E21D79A129008B0D29 /* HttpTool.m */,
+				0469F9DE1D79A113008B0D29 /* UIImageView+SDWebImage.h */,
+				0469F9DF1D79A113008B0D29 /* UIImageView+SDWebImage.m */,
 			);
 			path = Net;
 			sourceTree = "<group>";
@@ -346,6 +378,8 @@
 				044E588C1D77E9130027F8DB /* ViewController.h */,
 				044E588D1D77E9130027F8DB /* ViewController.m */,
 				044E58991D77EB540027F8DB /* yingke.pch */,
+				0469F9F01D79C4A4008B0D29 /* MJExtensionConfig.h */,
+				0469F9F11D79C4A4008B0D29 /* MJExtensionConfig.m */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -364,6 +398,8 @@
 		044E58901D77E9130027F8DB /* Handle */ = {
 			isa = PBXGroup;
 			children = (
+				0469F9E71D79B417008B0D29 /* MHLiveHandler.h */,
+				0469F9E81D79B417008B0D29 /* MHLiveHandler.m */,
 			);
 			path = Handle;
 			sourceTree = "<group>";
@@ -371,6 +407,10 @@
 		044E58911D77E9130027F8DB /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				0469F9EA1D79C0F4008B0D29 /* MHLive.h */,
+				0469F9EB1D79C0F4008B0D29 /* MHLive.m */,
+				0469F9ED1D79C10D008B0D29 /* MHCreator.h */,
+				0469F9EE1D79C10D008B0D29 /* MHCreator.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -380,6 +420,9 @@
 			children = (
 				044E58C01D790F4D0027F8DB /* MHMainTopView.h */,
 				044E58C11D790F4D0027F8DB /* MHMainTopView.m */,
+				0469F9F31D79D075008B0D29 /* MHLiveTableViewCell.h */,
+				0469F9F41D79D075008B0D29 /* MHLiveTableViewCell.m */,
+				0469F9F51D79D075008B0D29 /* MHLiveTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -495,6 +538,7 @@
 			files = (
 				044E58651D77E8980027F8DB /* LaunchScreen.storyboard in Resources */,
 				044E58621D77E8980027F8DB /* Assets.xcassets in Resources */,
+				0469F9F71D79D075008B0D29 /* MHLiveTableViewCell.xib in Resources */,
 				044E58AE1D7867150027F8DB /* MHLaunchViewController.xib in Resources */,
 				044E58BD1D7870500027F8DB /* MHNearbyViewController.xib in Resources */,
 				044E58B31D7870320027F8DB /* MHFocuseViewController.xib in Resources */,
@@ -561,18 +605,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				044E58B21D7870320027F8DB /* MHFocuseViewController.m in Sources */,
+				0469F9E91D79B417008B0D29 /* MHLiveHandler.m in Sources */,
+				0469F9F21D79C4A4008B0D29 /* MJExtensionConfig.m in Sources */,
 				044E58971D77E9130027F8DB /* AppDelegate.m in Sources */,
 				044E58571D77E8980027F8DB /* main.m in Sources */,
+				0469F9E31D79A129008B0D29 /* HttpTool.m in Sources */,
 				044E58BC1D7870500027F8DB /* MHNearbyViewController.m in Sources */,
 				044E58951D77E9130027F8DB /* MHBaseTabBarController.m in Sources */,
+				0469F9E01D79A113008B0D29 /* UIImageView+SDWebImage.m in Sources */,
 				044E58961D77E9130027F8DB /* MHTabBar.m in Sources */,
+				0469F9F61D79D075008B0D29 /* MHLiveTableViewCell.m in Sources */,
 				044E58C21D790F4D0027F8DB /* MHMainTopView.m in Sources */,
 				044E58AD1D7867150027F8DB /* MHLaunchViewController.m in Sources */,
+				0469F9EF1D79C10D008B0D29 /* MHCreator.m in Sources */,
 				044E58A51D782C810027F8DB /* MHBaseNavigationController.m in Sources */,
+				0469F9EC1D79C0F4008B0D29 /* MHLive.m in Sources */,
 				044E58B71D7870400027F8DB /* MHHotViewController.m in Sources */,
 				044E589C1D782BA80027F8DB /* MHBaseViewController.m in Sources */,
 				044E58A21D782BD20027F8DB /* MHMeViewController.m in Sources */,
 				044E58981D77E9130027F8DB /* ViewController.m in Sources */,
+				0469F9E61D79A770008B0D29 /* MHBaseHandler.m in Sources */,
 				044E589F1D782BC70027F8DB /* MHMainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

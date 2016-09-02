@@ -8,6 +8,6 @@
 
 #import "MHBaseViewController.h"
 
-@interface MHHotViewController : MHBaseViewController
+@interface MHHotViewController : UITableViewController
 
 @end

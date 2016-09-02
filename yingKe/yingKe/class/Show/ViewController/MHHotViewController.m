@@ -7,8 +7,10 @@
 //
 
 #import "MHHotViewController.h"
+#import "MHLiveHandler.h"
 
 @interface MHHotViewController ()
+@property (nonatomic, strong) NSMutableArray *dataList;
 
 @end
 
@@ -16,22 +18,63 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    
+    [self initUI];
+    [self loadData];
+    
+}
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+
+  return   self.dataList.count;
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return nil;
+
+}
+- (NSMutableArray *)dataList{
+    if (!_dataList) {
+        
+        _dataList = [NSMutableArray array];
+    }
+    return _dataList;
+}
+- (void)loadData{
+    [MHLiveHandler executeGetHotLiveTaskWithSuccess:^(id obj) {
+        
+        [self.dataList addObjectsFromArray:obj];
+        [self.tableView reloadData];
+        
+    } failed:^(id obj) {
+        NSLog(@"%@",obj);
+    }];
+
+}
+- (void)initUI{
+
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @end
