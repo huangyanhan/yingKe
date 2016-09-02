@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "DB73B0D4D1652134A8E2C4D67A65B40BE7E1C33B",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "DB73B0D4D1652134A8E2C4D67A65B40BE7E1C33B" : 0,
+    "1348A3F3A9255948743B6F3B2B6D2B1CE3E2D839" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "4C4D9F0B-9D42-4F3E-81A0-E2D9F9928030",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "DB73B0D4D1652134A8E2C4D67A65B40BE7E1C33B" : "yingKe\/",
+    "1348A3F3A9255948743B6F3B2B6D2B1CE3E2D839" : "yingKe\/yingKe\/yingKe\/class\/Lib\/YYKit\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "yingKe",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "yingKe\/yingKe.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/ibireme\/YYKit.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "1348A3F3A9255948743B6F3B2B6D2B1CE3E2D839"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/huangyanhan\/yingKe.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "DB73B0D4D1652134A8E2C4D67A65B40BE7E1C33B"
+    }
+  ]
+}

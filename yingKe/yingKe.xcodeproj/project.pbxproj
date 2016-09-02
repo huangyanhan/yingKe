@@ -29,6 +29,7 @@
 		044E58BC1D7870500027F8DB /* MHNearbyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 044E58BA1D7870500027F8DB /* MHNearbyViewController.m */; };
 		044E58BD1D7870500027F8DB /* MHNearbyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 044E58BB1D7870500027F8DB /* MHNearbyViewController.xib */; };
 		044E58BF1D787C000027F8DB /* MHMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 044E58BE1D787C000027F8DB /* MHMainViewController.xib */; };
+		044E58C21D790F4D0027F8DB /* MHMainTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 044E58C11D790F4D0027F8DB /* MHMainTopView.m */; };
 		D07B0C197E2687FDD3FBF0C0 /* libPods-yingKe.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C3CB61E9D58981145C60AFB /* libPods-yingKe.a */; };
 /* End PBXBuildFile section */
 
@@ -71,6 +72,9 @@
 		044E58BA1D7870500027F8DB /* MHNearbyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHNearbyViewController.m; sourceTree = "<group>"; };
 		044E58BB1D7870500027F8DB /* MHNearbyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MHNearbyViewController.xib; sourceTree = "<group>"; };
 		044E58BE1D787C000027F8DB /* MHMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MHMainViewController.xib; sourceTree = "<group>"; };
+		044E58C01D790F4D0027F8DB /* MHMainTopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHMainTopView.h; sourceTree = "<group>"; };
+		044E58C11D790F4D0027F8DB /* MHMainTopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHMainTopView.m; sourceTree = "<group>"; };
+		044E5AC71D7926870027F8DB /* MHAPIConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHAPIConfig.h; sourceTree = "<group>"; };
 		5C3CB61E9D58981145C60AFB /* libPods-yingKe.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-yingKe.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FF2F6EEF27A1A5C36E4551A /* Pods-yingKe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yingKe.debug.xcconfig"; path = "Pods/Target Support Files/Pods-yingKe/Pods-yingKe.debug.xcconfig"; sourceTree = "<group>"; };
 		8C5A8152F39483CCBD522C32 /* Pods-yingKe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yingKe.release.xcconfig"; path = "Pods/Target Support Files/Pods-yingKe/Pods-yingKe.release.xcconfig"; sourceTree = "<group>"; };
@@ -328,6 +332,7 @@
 		044E58871D77E9130027F8DB /* Net */ = {
 			isa = PBXGroup;
 			children = (
+				044E5AC71D7926870027F8DB /* MHAPIConfig.h */,
 			);
 			path = Net;
 			sourceTree = "<group>";
@@ -373,6 +378,8 @@
 		044E58921D77E9130027F8DB /* View */ = {
 			isa = PBXGroup;
 			children = (
+				044E58C01D790F4D0027F8DB /* MHMainTopView.h */,
+				044E58C11D790F4D0027F8DB /* MHMainTopView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -469,6 +476,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 044E58491D77E8980027F8DB;
 			productRefGroup = 044E58531D77E8980027F8DB /* Products */;
@@ -558,6 +566,7 @@
 				044E58BC1D7870500027F8DB /* MHNearbyViewController.m in Sources */,
 				044E58951D77E9130027F8DB /* MHBaseTabBarController.m in Sources */,
 				044E58961D77E9130027F8DB /* MHTabBar.m in Sources */,
+				044E58C21D790F4D0027F8DB /* MHMainTopView.m in Sources */,
 				044E58AD1D7867150027F8DB /* MHLaunchViewController.m in Sources */,
 				044E58A51D782C810027F8DB /* MHBaseNavigationController.m in Sources */,
 				044E58B71D7870400027F8DB /* MHHotViewController.m in Sources */,
@@ -678,6 +687,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/yingKe/class/Lib/YYKit/Vendor",
+				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/yingKe/class/Other/yingke.pch";
 				INFOPLIST_FILE = yingKe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -692,6 +705,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/yingKe/class/Lib/YYKit/Vendor",
+				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/yingKe/class/Other/yingke.pch";
 				INFOPLIST_FILE = yingKe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
