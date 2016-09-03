@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MHLive.h"
 
 @interface MHLiveTableViewCell : UITableViewCell
-
+@property (nonatomic, strong) MHLive *live;
 @end

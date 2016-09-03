@@ -8,6 +8,9 @@
 
 #import "MHHotViewController.h"
 #import "MHLiveHandler.h"
+#import "MHLiveTableViewCell.h"
+
+static NSString *indentifi = @"MHLiveTableViewCell";
 
 @interface MHHotViewController ()
 @property (nonatomic, strong) NSMutableArray *dataList;
@@ -23,23 +26,7 @@
     [self loadData];
     
 }
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-
-  return   self.dataList.count;
-}
-
-
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return nil;
-
-}
-- (NSMutableArray *)dataList{
-    if (!_dataList) {
-        
-        _dataList = [NSMutableArray array];
-    }
-    return _dataList;
-}
+#pragma mark - 方法
 - (void)loadData{
     [MHLiveHandler executeGetHotLiveTaskWithSuccess:^(id obj) {
         
@@ -49,12 +36,42 @@
     } failed:^(id obj) {
         NSLog(@"%@",obj);
     }];
-
+    
 }
 - (void)initUI{
-
+    
+    [self.tableView registerNib:[UINib nibWithNibName:@"MHLiveTableViewCell" bundle:nil] forCellReuseIdentifier:indentifi];
+    
 }
 
+
+#pragma mark - 代理
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+
+  return self.dataList.count;
+}
+
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    MHLiveTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:indentifi];
+    cell.live = self.dataList[indexPath.row];
+    
+    return cell;
+
+}
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    return 70 + SCREEN_WIDTH;
+}
+#pragma mark - 懒加载
+- (NSMutableArray *)dataList{
+    if (!_dataList) {
+        
+        _dataList = [NSMutableArray array];
+    }
+    return _dataList;
+}
 
 
 

@@ -23,6 +23,12 @@
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="kFA-dh-gnA" secondAttribute="height" id="7LT-yt-E5K"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pxd-xy-36q">
                                 <rect key="frame" x="244" y="10" width="80" height="20"/>
@@ -41,7 +47,7 @@
                                     <constraint firstAttribute="width" constant="80" id="efG-Lc-BXc"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ykD-P6-42T">
@@ -60,7 +66,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="0.7655454696902656" blue="0.88448905970545" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="kFA-dh-gnA" secondAttribute="bottom" constant="10" id="1bZ-8A-L5p"/>
                             <constraint firstItem="ZVN-rn-pBG" firstAttribute="top" secondItem="ykD-P6-42T" secondAttribute="bottom" constant="10" id="BBu-HQ-tlz"/>
@@ -80,23 +86,38 @@
                             <constraint firstAttribute="height" constant="70" id="zzK-FZ-K8o"/>
                         </constraints>
                     </view>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2je-rG-VdC">
-                        <rect key="frame" x="-36" y="65" width="334" height="334"/>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2je-rG-VdC">
+                        <rect key="frame" x="0.0" y="70" width="334" height="334"/>
                         <constraints>
                             <constraint firstAttribute="width" secondItem="2je-rG-VdC" secondAttribute="height" id="oOJ-XX-VgZ"/>
                         </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="live_tag_live" translatesAutoresizingMaskIntoConstraints="NO" id="Dzk-kG-Nzl">
+                        <rect key="frame" x="263" y="90" width="51" height="19"/>
                     </imageView>
                 </subviews>
                 <constraints>
                     <constraint firstAttribute="trailing" secondItem="FTk-2o-gmx" secondAttribute="trailing" id="20t-6e-wSH"/>
                     <constraint firstItem="FTk-2o-gmx" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Nry-nF-MHb"/>
                     <constraint firstAttribute="trailing" secondItem="2je-rG-VdC" secondAttribute="trailing" id="kup-wJ-kxx"/>
+                    <constraint firstItem="Dzk-kG-Nzl" firstAttribute="top" secondItem="FTk-2o-gmx" secondAttribute="bottom" constant="20" id="m9m-MI-Jhg"/>
                     <constraint firstItem="2je-rG-VdC" firstAttribute="top" secondItem="FTk-2o-gmx" secondAttribute="bottom" id="nQ1-uX-wiX"/>
+                    <constraint firstAttribute="trailing" secondItem="Dzk-kG-Nzl" secondAttribute="trailing" constant="20" id="sGW-wq-66H"/>
                     <constraint firstItem="FTk-2o-gmx" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="sLQ-uF-89u"/>
                     <constraint firstItem="2je-rG-VdC" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="yZM-3M-Br8"/>
                 </constraints>
             </tableViewCellContentView>
-            <point key="canvasLocation" x="252" y="300"/>
+            <connections>
+                <outlet property="bigImageView" destination="2je-rG-VdC" id="baC-SS-l1o"/>
+                <outlet property="headImageView" destination="kFA-dh-gnA" id="lZY-jm-n7A"/>
+                <outlet property="locationLabel" destination="ZVN-rn-pBG" id="9Ij-fo-Rsy"/>
+                <outlet property="nameLabel" destination="ykD-P6-42T" id="hcR-Xv-7BH"/>
+                <outlet property="onLineLabel" destination="pxd-xy-36q" id="xCa-2x-Mv2"/>
+            </connections>
+            <point key="canvasLocation" x="318" y="263"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="live_tag_live" width="51" height="19"/>
+    </resources>
 </document>

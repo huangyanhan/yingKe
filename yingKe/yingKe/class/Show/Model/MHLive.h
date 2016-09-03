@@ -12,7 +12,7 @@
 @interface MHLive : NSObject
 
 
-@property (nonatomic, strong) NSString * city;
+@property (nonatomic, strong) NSString * city;//所在城市
 @property (nonatomic, strong) MHCreator * creator;
 @property (nonatomic, assign) NSInteger group;
 @property (nonatomic, strong) NSString * ID;
@@ -20,7 +20,7 @@
 @property (nonatomic, assign) NSInteger link;
 @property (nonatomic, assign) NSInteger multi;
 @property (nonatomic, strong) NSString * name;
-@property (nonatomic, assign) NSInteger onlineUsers;
+@property (nonatomic, assign) NSInteger onlineUsers;//在线人数
 @property (nonatomic, assign) NSInteger optimal;
 @property (nonatomic, assign) NSInteger pubStat;
 @property (nonatomic, assign) NSInteger roomId;

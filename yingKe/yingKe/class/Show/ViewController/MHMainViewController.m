@@ -70,7 +70,7 @@
     
     CGFloat width = SCREEN_WIDTH;
     //    CGFloat width = scrollView.frame.size.width;
-    CGFloat height = SCREEN_HEIGHT;
+    CGFloat height = scrollView.height;
     
     CGFloat offSet = scrollView.contentOffset.x;
     

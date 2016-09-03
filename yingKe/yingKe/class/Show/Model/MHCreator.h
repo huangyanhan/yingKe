@@ -20,8 +20,8 @@
 @property (nonatomic, assign) NSInteger inkeVerify;
 @property (nonatomic, assign) NSInteger level;
 @property (nonatomic, strong) NSString * location;
-@property (nonatomic, strong) NSString * nick;
-@property (nonatomic, strong) NSString * portrait;
+@property (nonatomic, strong) NSString * nick;//昵称
+@property (nonatomic, strong) NSString * portrait;//头像
 @property (nonatomic, strong) NSString * profession;
 @property (nonatomic, assign) NSInteger rankVeri;
 @property (nonatomic, strong) NSString * thirdPlatform;

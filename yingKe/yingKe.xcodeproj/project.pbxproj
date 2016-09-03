@@ -25,7 +25,6 @@
 		044E58B21D7870320027F8DB /* MHFocuseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 044E58B01D7870320027F8DB /* MHFocuseViewController.m */; };
 		044E58B31D7870320027F8DB /* MHFocuseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 044E58B11D7870320027F8DB /* MHFocuseViewController.xib */; };
 		044E58B71D7870400027F8DB /* MHHotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 044E58B51D7870400027F8DB /* MHHotViewController.m */; };
-		044E58B81D7870400027F8DB /* MHHotViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 044E58B61D7870400027F8DB /* MHHotViewController.xib */; };
 		044E58BC1D7870500027F8DB /* MHNearbyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 044E58BA1D7870500027F8DB /* MHNearbyViewController.m */; };
 		044E58BD1D7870500027F8DB /* MHNearbyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 044E58BB1D7870500027F8DB /* MHNearbyViewController.xib */; };
 		044E58BF1D787C000027F8DB /* MHMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 044E58BE1D787C000027F8DB /* MHMainViewController.xib */; };
@@ -76,7 +75,6 @@
 		044E58B11D7870320027F8DB /* MHFocuseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MHFocuseViewController.xib; sourceTree = "<group>"; };
 		044E58B41D7870400027F8DB /* MHHotViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHHotViewController.h; sourceTree = "<group>"; };
 		044E58B51D7870400027F8DB /* MHHotViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHHotViewController.m; sourceTree = "<group>"; };
-		044E58B61D7870400027F8DB /* MHHotViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MHHotViewController.xib; sourceTree = "<group>"; };
 		044E58B91D7870500027F8DB /* MHNearbyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHNearbyViewController.h; sourceTree = "<group>"; };
 		044E58BA1D7870500027F8DB /* MHNearbyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHNearbyViewController.m; sourceTree = "<group>"; };
 		044E58BB1D7870500027F8DB /* MHNearbyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MHNearbyViewController.xib; sourceTree = "<group>"; };
@@ -441,7 +439,6 @@
 				044E58B11D7870320027F8DB /* MHFocuseViewController.xib */,
 				044E58B41D7870400027F8DB /* MHHotViewController.h */,
 				044E58B51D7870400027F8DB /* MHHotViewController.m */,
-				044E58B61D7870400027F8DB /* MHHotViewController.xib */,
 				044E58B91D7870500027F8DB /* MHNearbyViewController.h */,
 				044E58BA1D7870500027F8DB /* MHNearbyViewController.m */,
 				044E58BB1D7870500027F8DB /* MHNearbyViewController.xib */,
@@ -545,7 +542,6 @@
 				044E58601D77E8980027F8DB /* Main.storyboard in Resources */,
 				044E58BF1D787C000027F8DB /* MHMainViewController.xib in Resources */,
 				044E58A91D782D090027F8DB /* MHMeViewController.xib in Resources */,
-				044E58B81D7870400027F8DB /* MHHotViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
