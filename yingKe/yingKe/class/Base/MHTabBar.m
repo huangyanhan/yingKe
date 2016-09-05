@@ -30,7 +30,7 @@
             
             UIButton *item = [UIButton buttonWithType:UIButtonTypeCustom];
             
-            item.adjustsImageWhenHighlighted = NO;
+            item.adjustsImageWhenHighlighted = NO;//去除图片的高亮
             
             [item setImage:[UIImage imageNamed:self.dataList[i]] forState:UIControlStateNormal];
             [item setImage:[UIImage imageNamed:[self.dataList[i] stringByAppendingString:@"_p"]] forState:UIControlStateSelected];
@@ -49,6 +49,7 @@
     }
     return self;
 }
+#pragma mark - 点击事件
 - (void)clickItem:(UIButton *)button{
     if ([self.deleagte respondsToSelector:@selector(tabBar:clickButton:)]) {
         
@@ -63,6 +64,7 @@
     if (button.tag == MHItemTypelaunch) {
         return;
     }
+    //按钮的切换
     self.lastItem.selected = NO;
     button.selected = YES;
     self.lastItem = button;

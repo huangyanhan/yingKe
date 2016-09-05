@@ -39,10 +39,9 @@
     for (NSUInteger i = 0; i < dataArray.count; i++) {
         
         NSString *vcName = dataArray[i];
-        
         UIViewController *vc = [[NSClassFromString(vcName) alloc]init];
-        MHBaseNavigationController *nav = [[MHBaseNavigationController alloc]initWithRootViewController:vc];
         
+        MHBaseNavigationController *nav = [[MHBaseNavigationController alloc]initWithRootViewController:vc];
         [dataArray replaceObjectAtIndex:i withObject:nav];
         
     }

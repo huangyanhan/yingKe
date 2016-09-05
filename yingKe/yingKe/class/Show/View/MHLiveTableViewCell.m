@@ -25,7 +25,7 @@
     [_bigImageView downloadImage:[NSString stringWithFormat:@"%@%@",IMAGE_HOST,live.creator.portrait] placeholder:@"default_room"];
     _nameLabel.text = live.creator.nick;
     _onLineLabel.text = [@(live.onlineUsers)stringValue];
-    _locationLabel.text = live.city;
+    _locationLabel.text = live.creator.location;
 }
 
 - (void)awakeFromNib {
