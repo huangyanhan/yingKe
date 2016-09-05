@@ -68,6 +68,7 @@ static NSString *indentifi = @"MHLiveTableViewCell";
     MHLive *live = self.dataList[indexPath.row];
     MHPlayerViewController *playerVC = [[MHPlayerViewController alloc]init];
     playerVC.live = live;
+//    playerVC.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:playerVC animated:YES];
     
     

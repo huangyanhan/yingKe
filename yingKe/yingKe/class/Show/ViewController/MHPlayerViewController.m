@@ -12,6 +12,8 @@
 
 @interface MHPlayerViewController ()
 @property(atomic, retain) id<IJKMediaPlayback> player;
+@property(nonatomic, strong) UIImageView *blurImageView;
+@property (nonatomic, strong) UIButton *closeBtn;
 
 @end
 
@@ -21,6 +23,37 @@
     [super viewDidLoad];
     //播放
     [self initPlayer];
+    [self initUI];
+}
+- (UIButton *)closeBtn{
+    if (!_closeBtn) {
+        _closeBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+        [_closeBtn setImage:[UIImage imageNamed:@"mg_room_btn_guan_h"] forState:UIControlStateNormal];
+        [_closeBtn sizeToFit];
+        _closeBtn.frame = CGRectMake(SCREEN_WIDTH-_closeBtn.width - 10, SCREEN_HEIGHT-_closeBtn.height-10, _closeBtn.width, _closeBtn.height);
+        [_closeBtn addTarget:self action:@selector(closeButton:) forControlEvents:UIControlEventTouchUpInside];
+    }
+    return _closeBtn;
+}
+- (void)closeButton:(UIButton *)button{
+
+    [self.navigationController popToRootViewControllerAnimated:YES];
+}
+- (void)initUI{
+    self.blurImageView = [[UIImageView alloc]initWithFrame:self.view.bounds];
+    self.blurImageView.userInteractionEnabled = YES;
+    [self.blurImageView downloadImage:[NSString stringWithFormat:@"%@%@",IMAGE_HOST,self.live.creator.portrait] placeholder:@"default_room"];
+    [self.view addSubview:self.blurImageView];
+    
+    //创建毛玻璃效果
+    UIBlurEffect *blur = [UIBlurEffect effectWithStyle:UIBlurEffectStyleLight];
+    UIVisualEffectView *ev = [[UIVisualEffectView alloc]initWithEffect:blur];
+    ev.frame = self.blurImageView.bounds;
+    [self.blurImageView addSubview:ev];
+    
+    [self.view addSubview:self.closeBtn];
+
+    
 }
 - (void)initPlayer{
     
@@ -41,8 +74,11 @@
 }
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    
+    //隐藏navigation
+    self.navigationController.navigationBarHidden = YES;
+
     [self installMovieNotificationObservers];
+    
     
     [self.player prepareToPlay];
 }
@@ -105,6 +141,8 @@
     } else {
         NSLog(@"loadStateDidChange: ???: %d\n", (int)loadState);
     }
+    self.blurImageView.hidden = YES;
+    [self.blurImageView removeFromSuperview];
 }
 
 - (void)moviePlayBackDidFinish:(NSNotification*)notification

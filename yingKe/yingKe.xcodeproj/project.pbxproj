@@ -324,7 +324,6 @@
 			children = (
 				044E587E1D77E9130027F8DB /* Handle */,
 				044E587F1D77E9130027F8DB /* Model */,
-				044E58801D77E9130027F8DB /* View */,
 				044E58811D77E9130027F8DB /* ViewController */,
 			);
 			path = Live;
@@ -348,7 +347,8 @@
 			isa = PBXGroup;
 			children = (
 			);
-			path = View;
+			name = View;
+			path = ../Live/View;
 			sourceTree = "<group>";
 		};
 		044E58811D77E9130027F8DB /* ViewController */ = {
@@ -406,6 +406,7 @@
 				044E5AC71D7926870027F8DB /* MHAPIConfig.h */,
 				0469F9E11D79A129008B0D29 /* HttpTool.h */,
 				0469F9E21D79A129008B0D29 /* HttpTool.m */,
+				044E58801D77E9130027F8DB /* View */,
 				0469F9DE1D79A113008B0D29 /* UIImageView+SDWebImage.h */,
 				0469F9DF1D79A113008B0D29 /* UIImageView+SDWebImage.m */,
 			);
