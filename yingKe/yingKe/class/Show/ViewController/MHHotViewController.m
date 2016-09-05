@@ -9,7 +9,8 @@
 #import "MHHotViewController.h"
 #import "MHLiveHandler.h"
 #import "MHLiveTableViewCell.h"
-
+#import "MHLive.h"
+#import "MHPlayerViewController.h"
 static NSString *indentifi = @"MHLiveTableViewCell";
 
 @interface MHHotViewController ()
@@ -60,6 +61,18 @@ static NSString *indentifi = @"MHLiveTableViewCell";
     return cell;
 
 }
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    MHLive *live = self.dataList[indexPath.row];
+    MHPlayerViewController *playerVC = [[MHPlayerViewController alloc]init];
+    playerVC.live = live;
+    [self.navigationController pushViewController:playerVC animated:YES];
+    
+    
+}
+
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     
     return 70 + SCREEN_WIDTH;

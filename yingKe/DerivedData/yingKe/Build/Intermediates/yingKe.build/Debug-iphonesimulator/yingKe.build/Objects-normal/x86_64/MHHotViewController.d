@@ -10,4 +10,5 @@ dependencies: \
   /Users/mac/Desktop/yingKe/yingKe/yingKe/class/Base/MHBaseHandler.h \
   /Users/mac/Desktop/yingKe/yingKe/yingKe/class/Show/View/MHLiveTableViewCell.h \
   /Users/mac/Desktop/yingKe/yingKe/yingKe/class/Show/Model/MHLive.h \
-  /Users/mac/Desktop/yingKe/yingKe/yingKe/class/Show/Model/MHCreator.h
+  /Users/mac/Desktop/yingKe/yingKe/yingKe/class/Show/Model/MHCreator.h \
+  /Users/mac/Desktop/yingKe/yingKe/yingKe/class/Show/ViewController/MHPlayerViewController.h
