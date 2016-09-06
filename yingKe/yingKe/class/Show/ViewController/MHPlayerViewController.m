@@ -43,6 +43,7 @@
        
         make.edges.equalTo(self.view);
     }];
+    self.liveChatView.live = self.live;
     
 }
 - (UIButton *)closeBtn{

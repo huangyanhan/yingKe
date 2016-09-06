@@ -7,7 +7,8 @@
 //
 
 #import "MHBaseViewController.h"
+#import "MHLive.h"
 
 @interface MHLiveChatViewController : MHBaseViewController
-
+@property (nonatomic, strong) MHLive *live;
 @end
