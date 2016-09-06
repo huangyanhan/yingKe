@@ -19,4 +19,6 @@ dependencies: \
   /Users/mac/Desktop/yingKe/yingKe/IJKMediaFramework.framework/Headers/IJKMPMoviePlayerController.h \
   /Users/mac/Desktop/yingKe/yingKe/IJKMediaFramework.framework/Headers/IJKMediaPlayback.h \
   /Users/mac/Desktop/yingKe/yingKe/IJKMediaFramework.framework/Headers/IJKMediaFramework.h \
-  /Users/mac/Desktop/yingKe/yingKe/IJKMediaFramework.framework/Modules/module.modulemap
+  /Users/mac/Desktop/yingKe/yingKe/IJKMediaFramework.framework/Modules/module.modulemap \
+  /Users/mac/Desktop/yingKe/yingKe/yingKe/class/Show/ViewController/MHLiveChatViewController.h \
+  /Users/mac/Desktop/yingKe/yingKe/yingKe/class/Other/AppDelegate.h

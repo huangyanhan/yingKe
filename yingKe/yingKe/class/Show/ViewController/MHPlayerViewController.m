@@ -8,22 +8,42 @@
 
 #import "MHPlayerViewController.h"
 #import <IJKMediaFramework/IJKMediaFramework.h>
-
+#import "MHLiveChatViewController.h"
+#import "AppDelegate.h"
 
 @interface MHPlayerViewController ()
-@property(atomic, retain) id<IJKMediaPlayback> player;
-@property(nonatomic, strong) UIImageView *blurImageView;
+@property (atomic, retain) id<IJKMediaPlayback> player;
+@property (nonatomic, strong) UIImageView *blurImageView;
 @property (nonatomic, strong) UIButton *closeBtn;
+@property (nonatomic, strong) MHLiveChatViewController *liveChatView;
 
 @end
 
 @implementation MHPlayerViewController
+- (MHLiveChatViewController *)liveChatView{
+    if (!_liveChatView) {
+        
+        _liveChatView = [[MHLiveChatViewController alloc]init];
+    }
+    return _liveChatView;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     //播放
     [self initPlayer];
     [self initUI];
+    [self addChildVC];
+}
+- (void)addChildVC{
+
+    [self addChildViewController:self.liveChatView];
+    [self.view addSubview:self.liveChatView.view];
+    [self.liveChatView.view mas_makeConstraints:^(MASConstraintMaker *make) {
+       
+        make.edges.equalTo(self.view);
+    }];
+    
 }
 - (UIButton *)closeBtn{
     if (!_closeBtn) {
@@ -51,7 +71,6 @@
     ev.frame = self.blurImageView.bounds;
     [self.blurImageView addSubview:ev];
     
-    [self.view addSubview:self.closeBtn];
 
     
 }
@@ -81,6 +100,11 @@
     
     
     [self.player prepareToPlay];
+    
+    UIWindow *w = [[UIApplication sharedApplication ].delegate window];
+    
+    [w addSubview:self.closeBtn];
+
 }
 
 - (void)viewDidDisappear:(BOOL)animated {
@@ -88,6 +112,8 @@
     
     [self.player shutdown];
     [self removeMovieNotificationObservers];
+    [self.view addSubview:self.closeBtn];
+
 }
 #pragma mark Install Movie Notifications
 

@@ -53,6 +53,8 @@
 		0469F9F21D79C4A4008B0D29 /* MJExtensionConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 0469F9F11D79C4A4008B0D29 /* MJExtensionConfig.m */; };
 		0469F9F61D79D075008B0D29 /* MHLiveTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0469F9F41D79D075008B0D29 /* MHLiveTableViewCell.m */; };
 		0469F9F71D79D075008B0D29 /* MHLiveTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0469F9F51D79D075008B0D29 /* MHLiveTableViewCell.xib */; };
+		047C37A11D7EDE9400558AE4 /* MHLiveChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 047C379F1D7EDE9400558AE4 /* MHLiveChatViewController.m */; };
+		047C37A21D7EDE9400558AE4 /* MHLiveChatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 047C37A01D7EDE9400558AE4 /* MHLiveChatViewController.xib */; };
 		D07B0C197E2687FDD3FBF0C0 /* libPods-yingKe.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C3CB61E9D58981145C60AFB /* libPods-yingKe.a */; };
 /* End PBXBuildFile section */
 
@@ -130,6 +132,9 @@
 		0469F9F31D79D075008B0D29 /* MHLiveTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHLiveTableViewCell.h; sourceTree = "<group>"; };
 		0469F9F41D79D075008B0D29 /* MHLiveTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHLiveTableViewCell.m; sourceTree = "<group>"; };
 		0469F9F51D79D075008B0D29 /* MHLiveTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MHLiveTableViewCell.xib; sourceTree = "<group>"; };
+		047C379E1D7EDE9400558AE4 /* MHLiveChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHLiveChatViewController.h; sourceTree = "<group>"; };
+		047C379F1D7EDE9400558AE4 /* MHLiveChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHLiveChatViewController.m; sourceTree = "<group>"; };
+		047C37A01D7EDE9400558AE4 /* MHLiveChatViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MHLiveChatViewController.xib; sourceTree = "<group>"; };
 		5C3CB61E9D58981145C60AFB /* libPods-yingKe.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-yingKe.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FF2F6EEF27A1A5C36E4551A /* Pods-yingKe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yingKe.debug.xcconfig"; path = "Pods/Target Support Files/Pods-yingKe/Pods-yingKe.debug.xcconfig"; sourceTree = "<group>"; };
 		8C5A8152F39483CCBD522C32 /* Pods-yingKe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yingKe.release.xcconfig"; path = "Pods/Target Support Files/Pods-yingKe/Pods-yingKe.release.xcconfig"; sourceTree = "<group>"; };
@@ -490,6 +495,9 @@
 				044E58BB1D7870500027F8DB /* MHNearbyViewController.xib */,
 				0423688B1D7D8F0A00BD8BB4 /* MHPlayerViewController.h */,
 				0423688C1D7D8F0A00BD8BB4 /* MHPlayerViewController.m */,
+				047C379E1D7EDE9400558AE4 /* MHLiveChatViewController.h */,
+				047C379F1D7EDE9400558AE4 /* MHLiveChatViewController.m */,
+				047C37A01D7EDE9400558AE4 /* MHLiveChatViewController.xib */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -600,6 +608,7 @@
 				0469F9F71D79D075008B0D29 /* MHLiveTableViewCell.xib in Resources */,
 				044E58AE1D7867150027F8DB /* MHLaunchViewController.xib in Resources */,
 				044E58BD1D7870500027F8DB /* MHNearbyViewController.xib in Resources */,
+				047C37A21D7EDE9400558AE4 /* MHLiveChatViewController.xib in Resources */,
 				044E58B31D7870320027F8DB /* MHFocuseViewController.xib in Resources */,
 				044E58601D77E8980027F8DB /* Main.storyboard in Resources */,
 				044E58BF1D787C000027F8DB /* MHMainViewController.xib in Resources */,
@@ -671,6 +680,7 @@
 				0469F9E31D79A129008B0D29 /* HttpTool.m in Sources */,
 				044E58BC1D7870500027F8DB /* MHNearbyViewController.m in Sources */,
 				044E58951D77E9130027F8DB /* MHBaseTabBarController.m in Sources */,
+				047C37A11D7EDE9400558AE4 /* MHLiveChatViewController.m in Sources */,
 				0469F9E01D79A113008B0D29 /* UIImageView+SDWebImage.m in Sources */,
 				044E58961D77E9130027F8DB /* MHTabBar.m in Sources */,
 				0469F9F61D79D075008B0D29 /* MHLiveTableViewCell.m in Sources */,
